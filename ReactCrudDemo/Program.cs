@@ -19,6 +19,7 @@ namespace ReactCrudDemo
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseApplicationInsights("type your instrumentation key here")
                 .UseStartup<Startup>()
                 .Build();
     }
